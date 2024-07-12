@@ -13,7 +13,7 @@ function output(input) {
   let product;
 
   // Regex remove non word/space chars
-  // Trim trailing whitespce
+  // Trim trailing whitespace
   // Remove digits - not sure if this is best
   // But solves problem of entering something like 'hi1'
 
@@ -57,7 +57,7 @@ function compare(promptsArray, repliesArray, string) {
       }
     }
     if (replyFound) {
-      // Stop outer loop when reply is found instead of interating through the entire array
+      // Stop outer loop when reply is found instead of iterating through the entire array
       break;
     }
   }
@@ -90,8 +90,6 @@ function addChat(input, product) {
   // Fake delay to seem "real"
   setTimeout(() => {
     botText.innerText = `${product}`;
-    textToSpeech(product)
-  }, 2000
-  )
-
+    textToSpeech(product);
+  }, 2000);
 }
